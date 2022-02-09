@@ -1,0 +1,9 @@
+src\model\User.class
+src\dao\UserDaoImp.class
+src\service\UserService.class
+src\controller\UsersController.class
+src\service\UserServiceImp.class
+src\config\WebConfig.class
+src\config\AppInit.class
+src\dao\UserDao.class
+src\config\HiberConfig.class
