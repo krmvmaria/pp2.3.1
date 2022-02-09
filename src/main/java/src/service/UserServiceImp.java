@@ -32,17 +32,15 @@ public class UserServiceImp implements UserService {
 
     @Transactional
     @Override
-    public void change (User user, long id) {
-        userDao.change(user, id);
+    public User change (User user) {
+        return userDao.change(user);
     }
 
-    @Transactional
     @Override
     public List<User> listUsers () {
         return userDao.listUsers();
     }
 
-    @Transactional
     @Override
     public User findUserById (long id) {
         return userDao.findUserById(id);

@@ -29,12 +29,8 @@ public class UserDaoImp implements UserDao {
     }
 
     @Override
-    public void change (User user, long id) {
-        User changedUser = findUserById(id);
-        changedUser.setAge(user.getAge());
-        changedUser.setName(user.getName());
-        changedUser.setLastName(user.getLastName());
-        entityManager.merge(changedUser);
+    public User change(User user) {
+        return entityManager.merge(user);
     }
 
     @Override
